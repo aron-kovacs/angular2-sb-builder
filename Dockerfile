@@ -16,4 +16,4 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 
 RUN apt-get update -qq && apt-get install -qq -y nodejs maven
 
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli@1.7.4
