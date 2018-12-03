@@ -19,10 +19,8 @@ RUN apt-get update -qq && apt-get install -qq -y nodejs maven
 RUN curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
 
-ENV CHROME_VERSION=69.0.3497.100-1
-
 RUN apt-get update && apt-get install -y \
-    google-chrome-stable=$CHROME_VERSION \
+    google-chrome-stable \
     --no-install-recommends
 
 RUN npm install -g @angular/cli
