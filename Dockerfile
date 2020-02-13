@@ -12,7 +12,7 @@ RUN apt-get update -qq && \
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 ENV LANG C.UTF-8
 
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 
 RUN apt-get update -qq && apt-get install -qq -y nodejs maven
 
